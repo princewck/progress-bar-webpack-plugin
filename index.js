@@ -14,8 +14,8 @@ module.exports = function ProgressBarPlugin(options) {
     return function () {};
   }
 
-  var barLeft = chalk.bold('[');
-  var barRight = chalk.bold(']');
+  var barLeft = chalk.bold('');
+  var barRight = chalk.bold('');
   var preamble = chalk.cyan.bold('  build ') + barLeft;
   var barFormat = options.format || preamble + ':bar' + barRight + chalk.green.bold(' :percent');
   var summary = options.summary !== false;
